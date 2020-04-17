@@ -1,0 +1,36 @@
+#!/usr/bin/make -f
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+
+export DEB_BUILD_MAINT_OPTIONS = hardening=+bindnow
+export DEB_CFLAGS_MAINT_PREPEND = -Wall
+
+DPKG_EXPORT_BUILDTOOLS = 1
+include /usr/share/dpkg/buildtools.mk
+
+buildflags =
+ifeq (,$(filter terse,$(DEB_BUILD_OPTIONS)))
+	buildflags += V=1
+endif
+
+%:
+	dh $@
+
+override_dh_auto_configure:
+	./configure \
+	  --prefix=/usr \
+	  --includedir=/usr/include \
+	  --datadir=/usr/share \
+	  --mandir=/usr/share/man \
+	  --libdir=/usr/lib/$(DEB_HOST_MULTIARCH) \
+	  --libdevdir=/usr/lib/$(DEB_HOST_MULTIARCH) \
+	  --cc=$(CC)
+
+override_dh_auto_build:
+	dh_auto_build -- $(buildflags)
+
+# XXX: The tests do not pass yet on Linux 5.5, and they are not being
+# skipped either.
+override_dh_auto_test:
+	dh_auto_test -- runtests || true

@@ -1,0 +1,11 @@
+Tests: test-build
+Restrictions: flaky skippable
+Depends:
+ build-essential,
+ pkg-config,
+ liburing-dev,
+
+Tests: test-unit
+Restrictions: flaky rw-build-tree
+Depends:
+ build-essential,

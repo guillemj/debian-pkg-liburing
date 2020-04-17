@@ -1,0 +1,15 @@
+#!/bin/sh
+
+set -e
+exec 2>&1
+set -u
+set -x
+
+if [ -n "${DEB_HOST_GNU_TYPE:-}" ]; then
+  CC="$DEB_HOST_GNU_TYPE-gcc"
+else
+  CC=gcc
+fi
+
+./configure --cc=$CC
+make runtests

@@ -1,0 +1,5 @@
+liburing (0.6-1) unstable; urgency=medium
+
+  * Initial release. (Closes: #950903)
+
+ -- Guillem Jover <guillem@debian.org>  Fri, 17 Apr 2020 21:25:25 +0200
