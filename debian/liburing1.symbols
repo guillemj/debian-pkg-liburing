@@ -6,6 +6,7 @@ liburing.so.1 liburing1 #MINVER#
  LIBURING_0.4@LIBURING_0.4 0.4
  LIBURING_0.5@LIBURING_0.5 0.5
  LIBURING_0.6@LIBURING_0.6 0.6
+ LIBURING_0.7@LIBURING_0.7 0.7
  __io_uring_get_cqe@LIBURING_0.2 0.2
  io_uring_get_probe@LIBURING_0.4 0.4
  io_uring_get_probe_ring@LIBURING_0.4 0.4
