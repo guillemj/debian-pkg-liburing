@@ -1,0 +1,160 @@
+From 459e895f1167bbfc52649c204abc362a592d2bcb Mon Sep 17 00:00:00 2001
+From: Jens Axboe <axboe@kernel.dk>
+Date: Fri, 24 Apr 2020 07:39:24 -0600
+Subject: [PATCH] test: use mmap() directly in syzbot generated code
+
+Guillem reports that some new 32-bit architectures like armel and armhf
+don't have mmap, just mmap2. Just use mmap() and let libc deal with
+it, there's no reason why we need to call the specific mmap() system
+call.
+
+Reported-by: Guillem Jover <guillem@hadrons.org>
+Signed-off-by: Jens Axboe <axboe@kernel.dk>
+---
+ test/35fa71a030ca-test.c | 6 ++----
+ test/917257daa0fe-test.c | 3 ++-
+ test/a0908ae19763-test.c | 3 ++-
+ test/a4c0b3decb33-test.c | 3 ++-
+ test/b19062a56726-test.c | 3 ++-
+ test/fc2a85cb02ef-test.c | 3 ++-
+ 6 files changed, 12 insertions(+), 9 deletions(-)
+
+diff --git a/test/35fa71a030ca-test.c b/test/35fa71a030ca-test.c
+index 8fcc2d5..7cdfdd7 100644
+--- a/test/35fa71a030ca-test.c
++++ b/test/35fa71a030ca-test.c
+@@ -20,6 +20,7 @@
+ #include <sys/wait.h>
+ #include <time.h>
+ #include <unistd.h>
++#include <sys/mman.h>
+ 
+ #include <linux/futex.h>
+ 
+@@ -260,9 +261,6 @@ static void loop(void)
+ #ifndef __NR_io_uring_setup
+ #define __NR_io_uring_setup 425
+ #endif
+-#ifndef __NR_mmap
+-#define __NR_mmap 192
+-#endif
+ 
+ uint64_t r[1] = {0xffffffffffffffff};
+ 
+@@ -320,7 +318,7 @@ static void sig_int(int sig)
+ int main(void)
+ {
+   signal(SIGINT, sig_int);
+-  syscall(__NR_mmap, 0x20000000, 0x1000000, 3, 0x32, -1, 0);
++  mmap((void *) 0x20000000, 0x1000000, 3, 0x32, -1, 0);
+   loop();
+   return 0;
+ }
+diff --git a/test/917257daa0fe-test.c b/test/917257daa0fe-test.c
+index 1fc821d..c0ab26a 100644
+--- a/test/917257daa0fe-test.c
++++ b/test/917257daa0fe-test.c
+@@ -8,6 +8,7 @@
+ #include <string.h>
+ #include <sys/syscall.h>
+ #include <sys/types.h>
++#include <sys/mman.h>
+ #include <unistd.h>
+ 
+ #ifndef __NR_io_uring_setup
+@@ -16,7 +17,7 @@
+ 
+ int main(void)
+ {
+-  syscall(__NR_mmap, 0x20000000, 0x1000000, 3, 0x32, -1, 0);
++  mmap((void *) 0x20000000, 0x1000000, 3, 0x32, -1, 0);
+ 
+   *(uint32_t*)0x20000000 = 0;
+   *(uint32_t*)0x20000004 = 0;
+diff --git a/test/a0908ae19763-test.c b/test/a0908ae19763-test.c
+index b24db1b..7413328 100644
+--- a/test/a0908ae19763-test.c
++++ b/test/a0908ae19763-test.c
+@@ -8,6 +8,7 @@
+ #include <string.h>
+ #include <sys/syscall.h>
+ #include <sys/types.h>
++#include <sys/mman.h>
+ #include <unistd.h>
+ 
+ #ifndef __NR_io_uring_register
+@@ -21,7 +22,7 @@ uint64_t r[1] = {0xffffffffffffffff};
+ 
+ int main(void)
+ {
+-  syscall(__NR_mmap, 0x20000000, 0x1000000, 3, 0x32, -1, 0);
++  mmap((void *) 0x20000000, 0x1000000, 3, 0x32, -1, 0);
+   intptr_t res = 0;
+   *(uint32_t*)0x20000080 = 0;
+   *(uint32_t*)0x20000084 = 0;
+diff --git a/test/a4c0b3decb33-test.c b/test/a4c0b3decb33-test.c
+index eeecfc4..1fd4eb3 100644
+--- a/test/a4c0b3decb33-test.c
++++ b/test/a4c0b3decb33-test.c
+@@ -17,6 +17,7 @@
+ #include <sys/syscall.h>
+ #include <sys/types.h>
+ #include <sys/wait.h>
++#include <sys/mman.h>
+ #include <time.h>
+ #include <unistd.h>
+ 
+@@ -173,7 +174,7 @@ static void sig_int(int sig)
+ int main(void)
+ {
+ 	signal(SIGINT, sig_int);
+-	syscall(__NR_mmap, 0x20000000, 0x1000000, 3, 0x32, -1, 0);
++	mmap((void *) 0x20000000, 0x1000000, 3, 0x32, -1, 0);
+ 	loop();
+ 	return 0;
+ }
+diff --git a/test/b19062a56726-test.c b/test/b19062a56726-test.c
+index 27f3a08..a8bcb9b 100644
+--- a/test/b19062a56726-test.c
++++ b/test/b19062a56726-test.c
+@@ -8,6 +8,7 @@
+ #include <string.h>
+ #include <sys/syscall.h>
+ #include <sys/types.h>
++#include <sys/mman.h>
+ #include <unistd.h>
+ 
+ #ifndef __NR_io_uring_setup
+@@ -16,7 +17,7 @@
+ 
+ int main(void)
+ {
+-  syscall(__NR_mmap, 0x20000000, 0x1000000, 3, 0x32, -1, 0);
++  mmap((void *) 0x20000000, 0x1000000, 3, 0x32, -1, 0);
+ 
+   *(uint32_t*)0x20000200 = 0;
+   *(uint32_t*)0x20000204 = 0;
+diff --git a/test/fc2a85cb02ef-test.c b/test/fc2a85cb02ef-test.c
+index bb8427d..2a06d57 100644
+--- a/test/fc2a85cb02ef-test.c
++++ b/test/fc2a85cb02ef-test.c
+@@ -13,6 +13,7 @@
+ #include <sys/socket.h>
+ #include <sys/syscall.h>
+ #include <sys/types.h>
++#include <sys/mman.h>
+ #include <unistd.h>
+ 
+ static bool write_file(const char* file, const char* what, ...)
+@@ -86,7 +87,7 @@ uint64_t r[2] = {0xffffffffffffffff, 0xffffffffffffffff};
+ 
+ int main(void)
+ {
+-  syscall(__NR_mmap, 0x20000000ul, 0x1000000ul, 3ul, 0x32ul, -1, 0);
++  mmap((void *) 0x20000000ul, 0x1000000ul, 3ul, 0x32ul, -1, 0);
+   if (setup_fault()) {
+     printf("Test needs failslab/fail_futex/fail_page_alloc enabled, skipped\n");
+     return 0;
+-- 
+2.26.1.301.g55bc3eb7cb9
+
