@@ -33,6 +33,8 @@ Multi-Arch: same
 Depends:
  ${misc:Depends},
  liburing1 (= ${binary:Version}),
+ libc6-dev | libc-dev,
+ linux-libc-dev (>= 5.1),
 Description: Linux kernel io_uring access library - development files
  This library provides helpers to setup and teardown io_uring instances,
  and also a simplified interface for applications that do not need (or

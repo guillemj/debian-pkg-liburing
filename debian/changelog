@@ -1,3 +1,10 @@
+liburing (0.6-3) UNRELEASED; urgency=medium
+
+  * Add dependencies on libc6-dev | libc-dev and linux-libc-dev (>= 5.1)
+    to liburing-dev. (Closes: #959182)
+
+ -- Guillem Jover <guillem@debian.org>  Fri, 01 May 2020 04:42:50 +0200
+
 liburing (0.6-2) unstable; urgency=medium
 
   * Fix build failures on armhf and armel, by using __NR_mmap2 when __NR_mmap
