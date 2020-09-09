@@ -26,7 +26,7 @@ LIBS_STATIC=$($PKG_CONFIG --static --libs liburing)
 
 cd "$AUTOPKGTEST_TMP"
 
-# Test building example code against the installed library.
+## Test building example code against the installed library.
 for t in io_uring-test io_uring-cp link-cp ucontext-cp; do
   $CC $CFLAGS -o $t $exdir/$t.c $LIBS
   test -x ./$t
@@ -35,21 +35,19 @@ for t in io_uring-test io_uring-cp link-cp ucontext-cp; do
   test -x ./$t-static
 done
 
-# Test running the example code.
-./io_uring-test        io_uring-test
-./io_uring-test-static io_uring-test-static
+## Test running the example code.
 
-./io_uring-cp          io_uring-cp            io_uring-cp.copy
-cmp                    io_uring-cp            io_uring-cp.copy
-./io_uring-cp-static   io_uring-cp-static     io_uring-cp-static.copy
-cmp                    io_uring-cp-static     io_uring-cp-static.copy
+# One argument tests.
+for t in io_uring-test; do
+  ./$t        $t
+  ./$t-static $t-static
+done
 
-./io_uring-link        io_uring-link          io_uring-link.link
-cmp                    io_uring-link          io_uring-link.link
-./io_uring-link-static io_uring-link-static   io_uring-link-static.link
-cmp                    io_uring-link-static   io_uring-link-static.link
+# Two argument tests.
+for t in io_uring-cp io_uring-link ucontext-cp; do
+  ./$t $t $t.new
+  cmp $t $t.new
 
-./ucontext-cp          ucontext-cp            ucontext-cp.copy
-cmp                    ucontext-cp            ucontext-cp.copy
-./ucontext-cp-static   ucontext-cp-static     ucontext-cp-static.copy
-cmp                    ucontext-cp-static     ucontext-cp-static.copy
+  ./$t-static $t-static $t-static.new
+  cmp $t-static $t-static.new
+done

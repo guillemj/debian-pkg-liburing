@@ -1,6 +1,7 @@
 liburing (0.7-1) UNRELEASED; urgency=medium
 
   * New upstream version.
+  * Refactor debian/tests/test-build into two loops to avoid repetition.
 
  -- Guillem Jover <guillem@debian.org>  Fri, 17 Jul 2020 04:23:17 +0200
 
