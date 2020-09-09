@@ -44,7 +44,7 @@ for t in io_uring-test; do
 done
 
 # Two argument tests.
-for t in io_uring-cp io_uring-link ucontext-cp; do
+for t in io_uring-cp link-cp ucontext-cp; do
   ./$t $t $t.new
   cmp $t $t.new
 
