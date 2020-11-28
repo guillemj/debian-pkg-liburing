@@ -5,7 +5,7 @@ Maintainer: Guillem Jover <guillem@debian.org>
 Vcs-Browser: https://git.hadrons.org/cgit/debian/pkgs/liburing.git
 Vcs-Git: https://git.hadrons.org/git/debian/pkgs/liburing.git
 Homepage: https://github.com/axboe/liburing
-Standards-Version: 4.5.0
+Standards-Version: 4.5.1
 Rules-Requires-Root: no
 Build-Depends:
  debhelper-compat (= 13),
