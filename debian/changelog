@@ -1,9 +1,9 @@
-liburing (0.7-3) UNRELEASED; urgency=medium
+liburing (0.7-3) unstable; urgency=medium
 
   * Switch to Standards-Version 4.5.1 (no changes needed).
   * Add new debian/upstream/metadata file.
 
- -- Guillem Jover <guillem@debian.org>  Sat, 28 Nov 2020 20:05:08 +0100
+ -- Guillem Jover <guillem@debian.org>  Thu, 24 Dec 2020 18:11:40 +0100
 
 liburing (0.7-2) unstable; urgency=medium
 
