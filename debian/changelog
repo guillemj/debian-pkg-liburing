@@ -1,3 +1,11 @@
+liburing (2.0-1) UNRELEASED; urgency=medium
+
+  * New upstream version.
+    - Bump shared library SONAME to liburing2.
+    - Install man pages from section 3 and 7.
+
+ -- Guillem Jover <guillem@debian.org>  Sat, 06 Mar 2021 06:53:23 +0100
+
 liburing (0.7-3) unstable; urgency=medium
 
   * Switch to Standards-Version 4.5.1 (no changes needed).

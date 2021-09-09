@@ -11,7 +11,7 @@ Build-Depends:
  debhelper-compat (= 13),
  procps <!nocheck>,
 
-Package: liburing1
+Package: liburing2
 Architecture: linux-any
 Multi-Arch: same
 Pre-Depends:
@@ -32,7 +32,7 @@ Architecture: linux-any
 Multi-Arch: same
 Depends:
  ${misc:Depends},
- liburing1 (= ${binary:Version}),
+ liburing2 (= ${binary:Version}),
  libc6-dev | libc-dev,
  linux-libc-dev (>= 5.1),
 Description: Linux kernel io_uring access library - development files
