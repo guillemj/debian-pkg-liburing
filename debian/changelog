@@ -1,3 +1,9 @@
+liburing (2.1-1) UNRELEASED; urgency=medium
+
+  * New upstream release.
+
+ -- Guillem Jover <guillem@debian.org>  Sat, 11 Sep 2021 12:24:18 +0200
+
 liburing (2.0-1) experimental; urgency=medium
 
   * New upstream version.

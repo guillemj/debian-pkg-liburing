@@ -1,24 +1,8 @@
 ---
- sendmsg_fs_cve.c |    5 +++++
- sq-poll-dup.c    |    7 ++++++-
- sq-poll-share.c  |    6 +++++-
- timeout-new.c    |    4 ++--
- 4 files changed, 18 insertions(+), 4 deletions(-)
+ test/sq-poll-dup.c   |    7 ++++++-
+ test/sq-poll-share.c |    6 +++++-
+ 2 files changed, 11 insertions(+), 2 deletions(-)
 
---- a/test/sendmsg_fs_cve.c
-+++ b/test/sendmsg_fs_cve.c
-@@ -127,6 +127,11 @@ int main(int argc, char *argv[])
- 	pid_t c;
- 	int wstatus;
- 
-+	if (geteuid()) {
-+		printf("%s: skipped, not root\n", argv[0]);
-+		return 0;
-+	}
-+
- 	if (!mkdtemp(tmpdir)) {
- 		perror("mkdtemp()");
- 		return 1;
 --- a/test/sq-poll-dup.c
 +++ b/test/sq-poll-dup.c
 @@ -105,7 +105,12 @@ static int test(int fd, int do_dup_and_c
@@ -35,22 +19,9 @@
  			goto err;
  		}
  		/* no sharing for non-fixed either */
---- a/test/timeout-new.c
-+++ b/test/timeout-new.c
-@@ -202,8 +202,8 @@ int main(int argc, char *argv[])
- 		return 1;
- 	}
- 	if (!(ring_normal.features & IORING_FEAT_EXT_ARG)) {
--		fprintf(stderr, "feature IORING_FEAT_EXT_ARG not supported.\n");
--		return 1;
-+		fprintf(stderr, "skipping, feature IORING_FEAT_EXT_ARG not supported.\n");
-+		return 0;
- 	}
- 
- 	ret = test_return_before_timeout(&ring_normal);
 --- a/test/sq-poll-share.c
 +++ b/test/sq-poll-share.c
-@@ -104,7 +104,11 @@ int main(int argc, char *argv[])
+@@ -106,7 +106,11 @@ int main(int argc, char *argv[])
  		}
  		ret = io_uring_queue_init_params(BUFFERS, &rings[i], &p);
  		if (ret) {
