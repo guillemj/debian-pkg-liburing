@@ -1,6 +1,7 @@
 liburing (2.1-1) UNRELEASED; urgency=medium
 
   * New upstream release.
+  * Add patch to fix build failures on any-arm due to direct syscall(2) use.
 
  -- Guillem Jover <guillem@debian.org>  Sat, 11 Sep 2021 12:24:18 +0200
 
