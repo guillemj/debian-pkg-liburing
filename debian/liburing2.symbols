@@ -2,6 +2,7 @@ liburing.so.2 liburing2 #MINVER#
 * Build-Depends-Package: liburing-dev
  LIBURING_2.0@LIBURING_2.0 2.0
  LIBURING_2.1@LIBURING_2.1 2.1
+ LIBURING_2.2@LIBURING_2.2 2.2
  __io_uring_get_cqe@LIBURING_2.0 2.0
  __io_uring_sqring_wait@LIBURING_2.0 2.0
  io_uring_free_probe@LIBURING_2.0 2.0
@@ -15,12 +16,15 @@ liburing.so.2 liburing2 #MINVER#
  io_uring_queue_init@LIBURING_2.0 2.0
  io_uring_queue_init_params@LIBURING_2.0 2.0
  io_uring_queue_mmap@LIBURING_2.0 2.0
+ io_uring_register_buf_ring@LIBURING_2.2 2.2
  io_uring_register_buffers@LIBURING_2.0 2.0
+ io_uring_register_buffers_sparse@LIBURING_2.2 2.2
  io_uring_register_buffers_tags@LIBURING_2.1 2.1
  io_uring_register_buffers_update_tag@LIBURING_2.1 2.1
  io_uring_register_eventfd@LIBURING_2.0 2.0
  io_uring_register_eventfd_async@LIBURING_2.0 2.0
  io_uring_register_files@LIBURING_2.0 2.0
+ io_uring_register_files_sparse@LIBURING_2.2 2.2
  io_uring_register_files_tags@LIBURING_2.1 2.1
  io_uring_register_files_update@LIBURING_2.0 2.0
  io_uring_register_files_update_tag@LIBURING_2.1 2.1
@@ -28,13 +32,17 @@ liburing.so.2 liburing2 #MINVER#
  io_uring_register_iowq_max_workers@LIBURING_2.1 2.1
  io_uring_register_personality@LIBURING_2.0 2.0
  io_uring_register_probe@LIBURING_2.0 2.0
+ io_uring_register_ring_fd@LIBURING_2.2 2.2
  io_uring_ring_dontfork@LIBURING_2.0 2.0
  io_uring_submit@LIBURING_2.0 2.0
  io_uring_submit_and_wait@LIBURING_2.0 2.0
+ io_uring_submit_and_wait_timeout@LIBURING_2.2 2.2
+ io_uring_unregister_buf_ring@LIBURING_2.2 2.2
  io_uring_unregister_buffers@LIBURING_2.0 2.0
  io_uring_unregister_eventfd@LIBURING_2.0 2.0
  io_uring_unregister_files@LIBURING_2.0 2.0
  io_uring_unregister_iowq_aff@LIBURING_2.1 2.1
  io_uring_unregister_personality@LIBURING_2.0 2.0
+ io_uring_unregister_ring_fd@LIBURING_2.2 2.2
  io_uring_wait_cqe_timeout@LIBURING_2.0 2.0
  io_uring_wait_cqes@LIBURING_2.0 2.0

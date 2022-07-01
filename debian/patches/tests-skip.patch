@@ -5,7 +5,7 @@
 
 --- a/test/sq-poll-dup.c
 +++ b/test/sq-poll-dup.c
-@@ -105,7 +105,12 @@ static int test(int fd, int do_dup_and_c
+@@ -109,7 +109,12 @@ static int test(int fd, int do_dup_and_c
  		}
  		ret = io_uring_queue_init_params(BUFFERS, &rings[i], &p);
  		if (ret) {
