@@ -1,0 +1,78 @@
+From bc8953f26b303da891fd2c2a0a79dfe7b1707524 Mon Sep 17 00:00:00 2001
+From: Guillem Jover <guillem@hadrons.org>
+Date: Tue, 16 Aug 2022 15:36:58 +0200
+Subject: [PATCH 4/4] man: Lowercase man page name in title header
+
+Uppercase title names is a historical artifact that makes little sense
+nowadays. The man-pages project has recently decided to incrementally
+switch to lowercase titles. See
+<https://lore.kernel.org/all/20220721183620.hdvgwwef66hmrgln@illithid/T/#mdcd1aa2a1bf53ea2d105d8d01ef6fb28a0ae559a>
+and
+<https://lore.kernel.org/all/20220721183620.hdvgwwef66hmrgln@illithid/T/#m102dc62ff24c2128dcccd6959e50c55ac69cd94a>.
+
+And in any case this unifies the title case with the majority of
+existing liburing man pages.
+
+Signed-off-by: Guillem Jover <guillem@hadrons.org>
+---
+ man/io_uring.7          | 2 +-
+ man/io_uring_enter.2    | 2 +-
+ man/io_uring_register.2 | 2 +-
+ man/io_uring_setup.2    | 2 +-
+ 4 files changed, 4 insertions(+), 4 deletions(-)
+
+diff --git a/man/io_uring.7 b/man/io_uring.7
+index 8c71d93..60d40c2 100644
+--- a/man/io_uring.7
++++ b/man/io_uring.7
+@@ -2,7 +2,7 @@
+ .\" SPDX-License-Identifier: LGPL-2.0-or-later
+ .\"
+ 
+-.TH IO_URING 7 2020-07-26 "Linux" "Linux Programmer's Manual"
++.TH io_uring 7 2020-07-26 "Linux" "Linux Programmer's Manual"
+ .SH NAME
+ io_uring \- Asynchronous I/O facility
+ .SH SYNOPSIS
+diff --git a/man/io_uring_enter.2 b/man/io_uring_enter.2
+index dac824f..6bfe9c9 100644
+--- a/man/io_uring_enter.2
++++ b/man/io_uring_enter.2
+@@ -3,7 +3,7 @@
+ .\"
+ .\" SPDX-License-Identifier: LGPL-2.0-or-later
+ .\"
+-.TH IO_URING_ENTER 2 2019-01-22 "Linux" "Linux Programmer's Manual"
++.TH io_uring_enter 2 2019-01-22 "Linux" "Linux Programmer's Manual"
+ .SH NAME
+ io_uring_enter \- initiate and/or complete asynchronous I/O
+ .SH SYNOPSIS
+diff --git a/man/io_uring_register.2 b/man/io_uring_register.2
+index 1e91caf..6c440b9 100644
+--- a/man/io_uring_register.2
++++ b/man/io_uring_register.2
+@@ -3,7 +3,7 @@
+ .\"
+ .\" SPDX-License-Identifier: LGPL-2.0-or-later
+ .\"
+-.TH IO_URING_REGISTER 2 2019-01-17 "Linux" "Linux Programmer's Manual"
++.TH io_uring_register 2 2019-01-17 "Linux" "Linux Programmer's Manual"
+ .SH NAME
+ io_uring_register \- register files or user buffers for asynchronous I/O 
+ .SH SYNOPSIS
+diff --git a/man/io_uring_setup.2 b/man/io_uring_setup.2
+index 0f57d8f..0a5fa92 100644
+--- a/man/io_uring_setup.2
++++ b/man/io_uring_setup.2
+@@ -4,7 +4,7 @@
+ .\"
+ .\" SPDX-License-Identifier: LGPL-2.0-or-later
+ .\"
+-.TH IO_URING_SETUP 2 2019-01-29 "Linux" "Linux Programmer's Manual"
++.TH io_uring_setup 2 2019-01-29 "Linux" "Linux Programmer's Manual"
+ .SH NAME
+ io_uring_setup \- setup a context for performing asynchronous I/O
+ .SH SYNOPSIS
+-- 
+2.37.2
+

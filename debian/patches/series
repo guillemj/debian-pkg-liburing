@@ -1,1 +1,5 @@
 tests-skip.patch
+0001-Fix-typos.patch
+0002-Fix-typos.patch
+0003-man-Add-missing-section-numbers.patch
+0004-man-Lowercase-man-page-name-in-title-header.patch

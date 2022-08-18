@@ -3,6 +3,10 @@ liburing (2.2-2) UNRELEASED; urgency=medium
   * Pass build flags explicitly to dh_auto_build. This will override the
     variables set explicitly by upstream.
   * Add missing License field to test/* stanza in debian/copyright.
+  * Documentation cleanup:
+    - Fix typos in man pages and test cases.
+    - Add missing section numbers to man pages.
+    - Lowercase man page title headers.
 
  -- Guillem Jover <guillem@debian.org>  Thu, 18 Aug 2022 11:41:57 +0200
 
