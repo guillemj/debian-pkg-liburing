@@ -1,3 +1,7 @@
+Author: Guillem Jover <guillem@hadrons.org>
+Forwarded: not-needed
+Description: Skip tests when not running as root
+
 ---
  test/sq-poll-dup.c   |    7 ++++++-
  test/sq-poll-share.c |    6 +++++-
