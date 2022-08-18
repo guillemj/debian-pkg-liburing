@@ -13,6 +13,9 @@ buildflags =
 ifeq (,$(filter terse,$(DEB_BUILD_OPTIONS)))
 	buildflags += V=1
 endif
+buildflags += CPPFLAGS="$(CPPFLAGS)"
+buildflags += CFLAGS="$(CFLAGS)"
+buildflags += LDFLAGS="$(LDFLAGS)"
 
 %:
 	dh $@
