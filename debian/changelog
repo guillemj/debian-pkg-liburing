@@ -7,6 +7,7 @@ liburing (2.3-1) UNRELEASED; urgency=medium
     - Remove 0004-man-Lowercase-man-page-name-in-title-header.patch, ditto.
     - Remove tests-skip.patch, no longer needed.
   * Remove lintian-override false-positive, fixed in lintian.
+  * Add patch fixing typos in man pages.
 
  -- Guillem Jover <guillem@debian.org>  Sat, 05 Nov 2022 00:04:32 +0100
 
