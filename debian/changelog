@@ -1,3 +1,14 @@
+liburing (2.3-1) UNRELEASED; urgency=medium
+
+  * New upstream release.
+    - Remove 0001-Fix-typos.patch, merged upstream.
+    - Remove 0002-Fix-typos.patch, ditto.
+    - Remove 0003-man-Add-missing-section-numbers.patch, ditto.
+    - Remove 0004-man-Lowercase-man-page-name-in-title-header.patch, ditto.
+    - Remove tests-skip.patch, no longer needed.
+
+ -- Guillem Jover <guillem@debian.org>  Sat, 05 Nov 2022 00:04:32 +0100
+
 liburing (2.2-2) unstable; urgency=medium
 
   * Pass build flags explicitly to dh_auto_build. This will override the

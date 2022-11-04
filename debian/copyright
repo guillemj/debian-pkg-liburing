@@ -27,12 +27,13 @@ License: MIT
 Files:
  man/*
 Copyright:
- Copyright © 2019-2020 Jens Axboe <axboe@kernel.dk>
+ Copyright © 2019-2022 Jens Axboe <axboe@kernel.dk>
  Copyright © 2019 Jon Corbet <corbet@lwn.net>
  Copyright © 2019-2020 Red Hat, Inc.
  Copyright © 2020 Shuveb Hussain <shuveb@gmail.com>
  Copyright © 2021-2022 Stefan Roesch <shr@fb.com>
  Copyright © 2022 Dylan Yudaken <dylany@fb.com>
+ Copyright © 2022 Samuel Williams
 License: LGPL-2.1+ or MIT
 
 Files:
