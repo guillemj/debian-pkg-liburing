@@ -1,4 +1,4 @@
-liburing (2.3-1) UNRELEASED; urgency=medium
+liburing (2.3-1) unstable; urgency=medium
 
   * New upstream release.
     - Remove 0001-Fix-typos.patch, merged upstream.
@@ -9,7 +9,7 @@ liburing (2.3-1) UNRELEASED; urgency=medium
   * Remove lintian-override false-positive, fixed in lintian.
   * Add patch fixing typos in man pages.
 
- -- Guillem Jover <guillem@debian.org>  Sat, 05 Nov 2022 00:04:32 +0100
+ -- Guillem Jover <guillem@debian.org>  Sat, 05 Nov 2022 00:14:14 +0100
 
 liburing (2.2-2) unstable; urgency=medium
 
