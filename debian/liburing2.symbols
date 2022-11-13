@@ -10,16 +10,16 @@ liburing.so.2 liburing2 #MINVER#
  io_uring_enter@LIBURING_2.3 2.3
  io_uring_free_probe@LIBURING_2.0 2.0
  io_uring_get_events@LIBURING_2.3 2.3
- io_uring_get_probe@LIBURING_2.0 2.0
+ io_uring_get_probe@LIBURING_2.0 2.3
  io_uring_get_probe_ring@LIBURING_2.0 2.0
  io_uring_get_sqe@LIBURING_2.0 2.0
- io_uring_mlock_size@LIBURING_2.1 2.1
- io_uring_mlock_size_params@LIBURING_2.1 2.1
+ io_uring_mlock_size@LIBURING_2.1 2.3
+ io_uring_mlock_size_params@LIBURING_2.1 2.3
  io_uring_peek_batch_cqe@LIBURING_2.0 2.0
  io_uring_queue_exit@LIBURING_2.0 2.0
- io_uring_queue_init@LIBURING_2.0 2.0
- io_uring_queue_init_params@LIBURING_2.0 2.0
- io_uring_queue_mmap@LIBURING_2.0 2.0
+ io_uring_queue_init@LIBURING_2.0 2.3
+ io_uring_queue_init_params@LIBURING_2.0 2.3
+ io_uring_queue_mmap@LIBURING_2.0 2.3
  io_uring_register@LIBURING_2.3 2.3
  io_uring_register_buf_ring@LIBURING_2.2 2.2
  io_uring_register_buffers@LIBURING_2.0 2.0
