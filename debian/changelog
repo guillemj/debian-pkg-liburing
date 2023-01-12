@@ -1,6 +1,7 @@
 liburing (2.3-3) UNRELEASED; urgency=medium
 
   * Switch to Standards-Version 4.6.2 (no changes needed).
+  * Do not trim debian/changelog.
 
  -- Guillem Jover <guillem@debian.org>  Thu, 12 Jan 2023 23:45:17 +0100
 

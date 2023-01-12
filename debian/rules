@@ -37,3 +37,6 @@ override_dh_auto_build:
 # skipped either.
 override_dh_auto_test:
 	dh_auto_test -- runtests || true
+
+override_dh_installchangelogs:
+	dh_installchangelogs --no-trim
