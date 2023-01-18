@@ -4,6 +4,7 @@ liburing (2.3-3) UNRELEASED; urgency=medium
   * Do not trim debian/changelog.
   * Update copyright years.
   * Make globs in debhelper fragment files more specific.
+  * Switch from hardening=+bindnow to hardening=+all.
 
  -- Guillem Jover <guillem@debian.org>  Thu, 12 Jan 2023 23:45:17 +0100
 
