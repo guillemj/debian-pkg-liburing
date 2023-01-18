@@ -2,6 +2,8 @@ From 4f47ec11d424b3330372398aa2c827998bbaa899 Mon Sep 17 00:00:00 2001
 From: Guillem Jover <guillem@hadrons.org>
 Date: Sat, 5 Nov 2022 00:20:08 +0100
 Subject: [PATCH] man: Fix typos
+Origin: vendor
+Forwarded: https://github.com/axboe/liburing/pull/775
 
 Warned-by: lintian
 ---

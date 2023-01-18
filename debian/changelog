@@ -5,6 +5,7 @@ liburing (2.3-3) UNRELEASED; urgency=medium
   * Update copyright years.
   * Make globs in debhelper fragment files more specific.
   * Switch from hardening=+bindnow to hardening=+all.
+  * Update debian/patches metadata.
 
  -- Guillem Jover <guillem@debian.org>  Thu, 12 Jan 2023 23:45:17 +0100
 
