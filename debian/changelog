@@ -1,4 +1,4 @@
-liburing (2.3-3) UNRELEASED; urgency=medium
+liburing (2.3-3) unstable; urgency=medium
 
   * Switch to Standards-Version 4.6.2 (no changes needed).
   * Do not trim debian/changelog.
@@ -7,7 +7,7 @@ liburing (2.3-3) UNRELEASED; urgency=medium
   * Switch from hardening=+bindnow to hardening=+all.
   * Update debian/patches metadata.
 
- -- Guillem Jover <guillem@debian.org>  Thu, 12 Jan 2023 23:45:17 +0100
+ -- Guillem Jover <guillem@debian.org>  Wed, 18 Jan 2023 03:15:54 +0100
 
 liburing (2.3-2) unstable; urgency=medium
 
