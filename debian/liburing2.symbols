@@ -1,18 +1,194 @@
+liburing-ffi.so.2 liburing2 #MINVER#
+* Build-Depends-Package: liburing-dev
+ LIBURING_2.4@LIBURING_2.4 2.4
+ __io_uring_buf_ring_cq_advance@LIBURING_2.4 2.4
+ __io_uring_get_cqe@LIBURING_2.4 2.4
+ __io_uring_sqring_wait@LIBURING_2.4 2.4
+ io_uring_buf_ring_add@LIBURING_2.4 2.4
+ io_uring_buf_ring_advance@LIBURING_2.4 2.4
+ io_uring_buf_ring_cq_advance@LIBURING_2.4 2.4
+ io_uring_buf_ring_init@LIBURING_2.4 2.4
+ io_uring_buf_ring_mask@LIBURING_2.4 2.4
+ io_uring_check_version@LIBURING_2.4 2.4
+ io_uring_close_ring_fd@LIBURING_2.4 2.4
+ io_uring_cq_advance@LIBURING_2.4 2.4
+ io_uring_cq_eventfd_enabled@LIBURING_2.4 2.4
+ io_uring_cq_eventfd_toggle@LIBURING_2.4 2.4
+ io_uring_cq_has_overflow@LIBURING_2.4 2.4
+ io_uring_cq_ready@LIBURING_2.4 2.4
+ io_uring_cqe_get_data64@LIBURING_2.4 2.4
+ io_uring_cqe_get_data@LIBURING_2.4 2.4
+ io_uring_cqe_seen@LIBURING_2.4 2.4
+ io_uring_enable_rings@LIBURING_2.4 2.4
+ io_uring_enter2@LIBURING_2.4 2.4
+ io_uring_enter@LIBURING_2.4 2.4
+ io_uring_free_buf_ring@LIBURING_2.4 2.4
+ io_uring_free_probe@LIBURING_2.4 2.4
+ io_uring_get_events@LIBURING_2.4 2.4
+ io_uring_get_probe@LIBURING_2.4 2.4
+ io_uring_get_probe_ring@LIBURING_2.4 2.4
+ io_uring_get_sqe@LIBURING_2.4 2.4
+ io_uring_major_version@LIBURING_2.4 2.4
+ io_uring_minor_version@LIBURING_2.4 2.4
+ io_uring_mlock_size@LIBURING_2.4 2.4
+ io_uring_mlock_size_params@LIBURING_2.4 2.4
+ io_uring_opcode_supported@LIBURING_2.4 2.4
+ io_uring_peek_batch_cqe@LIBURING_2.4 2.4
+ io_uring_peek_cqe@LIBURING_2.4 2.4
+ io_uring_prep_accept@LIBURING_2.4 2.4
+ io_uring_prep_accept_direct@LIBURING_2.4 2.4
+ io_uring_prep_cancel64@LIBURING_2.4 2.4
+ io_uring_prep_cancel@LIBURING_2.4 2.4
+ io_uring_prep_cancel_fd@LIBURING_2.4 2.4
+ io_uring_prep_close@LIBURING_2.4 2.4
+ io_uring_prep_close_direct@LIBURING_2.4 2.4
+ io_uring_prep_connect@LIBURING_2.4 2.4
+ io_uring_prep_epoll_ctl@LIBURING_2.4 2.4
+ io_uring_prep_fadvise@LIBURING_2.4 2.4
+ io_uring_prep_fallocate@LIBURING_2.4 2.4
+ io_uring_prep_fgetxattr@LIBURING_2.4 2.4
+ io_uring_prep_files_update@LIBURING_2.4 2.4
+ io_uring_prep_fsetxattr@LIBURING_2.4 2.4
+ io_uring_prep_fsync@LIBURING_2.4 2.4
+ io_uring_prep_getxattr@LIBURING_2.4 2.4
+ io_uring_prep_link@LIBURING_2.4 2.4
+ io_uring_prep_link_timeout@LIBURING_2.4 2.4
+ io_uring_prep_linkat@LIBURING_2.4 2.4
+ io_uring_prep_madvise@LIBURING_2.4 2.4
+ io_uring_prep_mkdir@LIBURING_2.4 2.4
+ io_uring_prep_mkdirat@LIBURING_2.4 2.4
+ io_uring_prep_msg_ring@LIBURING_2.4 2.4
+ io_uring_prep_msg_ring_cqe_flags@LIBURING_2.4 2.4
+ io_uring_prep_msg_ring_fd@LIBURING_2.4 2.4
+ io_uring_prep_msg_ring_fd_alloc@LIBURING_2.4 2.4
+ io_uring_prep_multishot_accept@LIBURING_2.4 2.4
+ io_uring_prep_multishot_accept_direct@LIBURING_2.4 2.4
+ io_uring_prep_nop@LIBURING_2.4 2.4
+ io_uring_prep_openat2@LIBURING_2.4 2.4
+ io_uring_prep_openat2_direct@LIBURING_2.4 2.4
+ io_uring_prep_openat@LIBURING_2.4 2.4
+ io_uring_prep_openat_direct@LIBURING_2.4 2.4
+ io_uring_prep_poll_add@LIBURING_2.4 2.4
+ io_uring_prep_poll_multishot@LIBURING_2.4 2.4
+ io_uring_prep_poll_remove@LIBURING_2.4 2.4
+ io_uring_prep_poll_update@LIBURING_2.4 2.4
+ io_uring_prep_provide_buffers@LIBURING_2.4 2.4
+ io_uring_prep_read@LIBURING_2.4 2.4
+ io_uring_prep_read_fixed@LIBURING_2.4 2.4
+ io_uring_prep_readv2@LIBURING_2.4 2.4
+ io_uring_prep_readv@LIBURING_2.4 2.4
+ io_uring_prep_recv@LIBURING_2.4 2.4
+ io_uring_prep_recv_multishot@LIBURING_2.4 2.4
+ io_uring_prep_recvmsg@LIBURING_2.4 2.4
+ io_uring_prep_recvmsg_multishot@LIBURING_2.4 2.4
+ io_uring_prep_remove_buffers@LIBURING_2.4 2.4
+ io_uring_prep_rename@LIBURING_2.4 2.4
+ io_uring_prep_renameat@LIBURING_2.4 2.4
+ io_uring_prep_rw@LIBURING_2.4 2.4
+ io_uring_prep_send@LIBURING_2.4 2.4
+ io_uring_prep_send_set_addr@LIBURING_2.4 2.4
+ io_uring_prep_send_zc@LIBURING_2.4 2.4
+ io_uring_prep_send_zc_fixed@LIBURING_2.4 2.4
+ io_uring_prep_sendmsg@LIBURING_2.4 2.4
+ io_uring_prep_sendmsg_zc@LIBURING_2.4 2.4
+ io_uring_prep_sendto@LIBURING_2.4 2.4
+ io_uring_prep_setxattr@LIBURING_2.4 2.4
+ io_uring_prep_shutdown@LIBURING_2.4 2.4
+ io_uring_prep_socket@LIBURING_2.4 2.4
+ io_uring_prep_socket_direct@LIBURING_2.4 2.4
+ io_uring_prep_socket_direct_alloc@LIBURING_2.4 2.4
+ io_uring_prep_splice@LIBURING_2.4 2.4
+ io_uring_prep_statx@LIBURING_2.4 2.4
+ io_uring_prep_symlink@LIBURING_2.4 2.4
+ io_uring_prep_symlinkat@LIBURING_2.4 2.4
+ io_uring_prep_sync_file_range@LIBURING_2.4 2.4
+ io_uring_prep_tee@LIBURING_2.4 2.4
+ io_uring_prep_timeout@LIBURING_2.4 2.4
+ io_uring_prep_timeout_remove@LIBURING_2.4 2.4
+ io_uring_prep_timeout_update@LIBURING_2.4 2.4
+ io_uring_prep_unlink@LIBURING_2.4 2.4
+ io_uring_prep_unlinkat@LIBURING_2.4 2.4
+ io_uring_prep_write@LIBURING_2.4 2.4
+ io_uring_prep_write_fixed@LIBURING_2.4 2.4
+ io_uring_prep_writev2@LIBURING_2.4 2.4
+ io_uring_prep_writev@LIBURING_2.4 2.4
+ io_uring_queue_exit@LIBURING_2.4 2.4
+ io_uring_queue_init@LIBURING_2.4 2.4
+ io_uring_queue_init_params@LIBURING_2.4 2.4
+ io_uring_queue_mmap@LIBURING_2.4 2.4
+ io_uring_recvmsg_cmsg_firsthdr@LIBURING_2.4 2.4
+ io_uring_recvmsg_cmsg_nexthdr@LIBURING_2.4 2.4
+ io_uring_recvmsg_name@LIBURING_2.4 2.4
+ io_uring_recvmsg_payload@LIBURING_2.4 2.4
+ io_uring_recvmsg_payload_length@LIBURING_2.4 2.4
+ io_uring_recvmsg_validate@LIBURING_2.4 2.4
+ io_uring_register@LIBURING_2.4 2.4
+ io_uring_register_buf_ring@LIBURING_2.4 2.4
+ io_uring_register_buffers@LIBURING_2.4 2.4
+ io_uring_register_buffers_sparse@LIBURING_2.4 2.4
+ io_uring_register_buffers_tags@LIBURING_2.4 2.4
+ io_uring_register_buffers_update_tag@LIBURING_2.4 2.4
+ io_uring_register_eventfd@LIBURING_2.4 2.4
+ io_uring_register_eventfd_async@LIBURING_2.4 2.4
+ io_uring_register_file_alloc_range@LIBURING_2.4 2.4
+ io_uring_register_files@LIBURING_2.4 2.4
+ io_uring_register_files_sparse@LIBURING_2.4 2.4
+ io_uring_register_files_tags@LIBURING_2.4 2.4
+ io_uring_register_files_update@LIBURING_2.4 2.4
+ io_uring_register_files_update_tag@LIBURING_2.4 2.4
+ io_uring_register_iowq_aff@LIBURING_2.4 2.4
+ io_uring_register_iowq_max_workers@LIBURING_2.4 2.4
+ io_uring_register_personality@LIBURING_2.4 2.4
+ io_uring_register_probe@LIBURING_2.4 2.4
+ io_uring_register_restrictions@LIBURING_2.4 2.4
+ io_uring_register_ring_fd@LIBURING_2.4 2.4
+ io_uring_register_sync_cancel@LIBURING_2.4 2.4
+ io_uring_ring_dontfork@LIBURING_2.4 2.4
+ io_uring_setup@LIBURING_2.4 2.4
+ io_uring_setup_buf_ring@LIBURING_2.4 2.4
+ io_uring_sq_ready@LIBURING_2.4 2.4
+ io_uring_sq_space_left@LIBURING_2.4 2.4
+ io_uring_sqe_set_data64@LIBURING_2.4 2.4
+ io_uring_sqe_set_data@LIBURING_2.4 2.4
+ io_uring_sqe_set_flags@LIBURING_2.4 2.4
+ io_uring_sqring_wait@LIBURING_2.4 2.4
+ io_uring_submit@LIBURING_2.4 2.4
+ io_uring_submit_and_get_events@LIBURING_2.4 2.4
+ io_uring_submit_and_wait@LIBURING_2.4 2.4
+ io_uring_submit_and_wait_timeout@LIBURING_2.4 2.4
+ io_uring_unregister_buf_ring@LIBURING_2.4 2.4
+ io_uring_unregister_buffers@LIBURING_2.4 2.4
+ io_uring_unregister_eventfd@LIBURING_2.4 2.4
+ io_uring_unregister_files@LIBURING_2.4 2.4
+ io_uring_unregister_iowq_aff@LIBURING_2.4 2.4
+ io_uring_unregister_personality@LIBURING_2.4 2.4
+ io_uring_unregister_ring_fd@LIBURING_2.4 2.4
+ io_uring_wait_cqe@LIBURING_2.4 2.4
+ io_uring_wait_cqe_nr@LIBURING_2.4 2.4
+ io_uring_wait_cqe_timeout@LIBURING_2.4 2.4
+ io_uring_wait_cqes@LIBURING_2.4 2.4
 liburing.so.2 liburing2 #MINVER#
 * Build-Depends-Package: liburing-dev
  LIBURING_2.0@LIBURING_2.0 2.0
  LIBURING_2.1@LIBURING_2.1 2.1
  LIBURING_2.2@LIBURING_2.2 2.2
  LIBURING_2.3@LIBURING_2.3 2.3
+ LIBURING_2.4@LIBURING_2.4 2.4
  __io_uring_get_cqe@LIBURING_2.0 2.0
  __io_uring_sqring_wait@LIBURING_2.0 2.0
+ io_uring_check_version@LIBURING_2.4 2.4
+ io_uring_close_ring_fd@LIBURING_2.4 2.4
+ io_uring_enable_rings@LIBURING_2.4 2.4
  io_uring_enter2@LIBURING_2.3 2.3
  io_uring_enter@LIBURING_2.3 2.3
+ io_uring_free_buf_ring@LIBURING_2.4 2.4
  io_uring_free_probe@LIBURING_2.0 2.0
  io_uring_get_events@LIBURING_2.3 2.3
  io_uring_get_probe@LIBURING_2.0 2.3
  io_uring_get_probe_ring@LIBURING_2.0 2.0
  io_uring_get_sqe@LIBURING_2.0 2.0
+ io_uring_major_version@LIBURING_2.4 2.4
+ io_uring_minor_version@LIBURING_2.4 2.4
  io_uring_mlock_size@LIBURING_2.1 2.3
  io_uring_mlock_size_params@LIBURING_2.1 2.3
  io_uring_peek_batch_cqe@LIBURING_2.0 2.0
@@ -38,10 +214,12 @@ liburing.so.2 liburing2 #MINVER#
  io_uring_register_iowq_max_workers@LIBURING_2.1 2.1
  io_uring_register_personality@LIBURING_2.0 2.0
  io_uring_register_probe@LIBURING_2.0 2.0
+ io_uring_register_restrictions@LIBURING_2.4 2.4
  io_uring_register_ring_fd@LIBURING_2.2 2.2
  io_uring_register_sync_cancel@LIBURING_2.3 2.3
  io_uring_ring_dontfork@LIBURING_2.0 2.0
  io_uring_setup@LIBURING_2.3 2.3
+ io_uring_setup_buf_ring@LIBURING_2.4 2.4
  io_uring_submit@LIBURING_2.0 2.0
  io_uring_submit_and_get_events@LIBURING_2.3 2.3
  io_uring_submit_and_wait@LIBURING_2.0 2.0

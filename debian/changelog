@@ -1,3 +1,14 @@
+liburing (2.4-1) UNRELEASED; urgency=medium
+
+  * New upstream release.
+    - Remove 0001-man-Fix-typos.patch, merged upstream.
+    - Add new patch to fix stack protection disabling.
+    - Add new patch to fail the build on undefined symbols.
+    - Install new liburing-ffi static and shared libraries.
+    - Install new man pages.
+
+ -- Guillem Jover <guillem@debian.org>  Mon, 12 Jun 2023 23:33:45 +0200
+
 liburing (2.3-3) unstable; urgency=medium
 
   * Switch to Standards-Version 4.6.2 (no changes needed).

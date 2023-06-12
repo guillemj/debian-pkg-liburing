@@ -1,0 +1,3 @@
+# On these architectures we do not link against a libc.
+liburing2 [amd64 arm64 i386]: shared-library-lacks-prerequisites [usr/lib/*/liburing-ffi.so.*]
+liburing2 [amd64 arm64 i386]: shared-library-lacks-prerequisites [usr/lib/*/liburing.so.*]

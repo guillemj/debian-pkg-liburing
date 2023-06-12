@@ -1,4 +1,7 @@
 usr/include
+usr/lib/*/liburing-ffi.a
+usr/lib/*/liburing-ffi.so
 usr/lib/*/liburing.a
 usr/lib/*/liburing.so
+usr/lib/*/pkgconfig/liburing-ffi.pc
 usr/lib/*/pkgconfig/liburing.pc
