@@ -1,4 +1,4 @@
-liburing (2.4-1) UNRELEASED; urgency=medium
+liburing (2.4-1) unstable; urgency=medium
 
   * New upstream release.
     - Remove 0001-man-Fix-typos.patch, merged upstream.
@@ -8,7 +8,7 @@ liburing (2.4-1) UNRELEASED; urgency=medium
     - Install new man pages.
   * Fix license information for a test file in debian/copyright.
 
- -- Guillem Jover <guillem@debian.org>  Mon, 12 Jun 2023 23:33:45 +0200
+ -- Guillem Jover <guillem@debian.org>  Tue, 13 Jun 2023 02:50:52 +0200
 
 liburing (2.3-3) unstable; urgency=medium
 
