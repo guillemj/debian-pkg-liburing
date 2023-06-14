@@ -2,7 +2,7 @@ Tests: test-build
 Restrictions: flaky skippable
 Depends:
  build-essential,
- pkg-config,
+ pkgconf,
  liburing-dev,
 
 Tests: test-unit
