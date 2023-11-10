@@ -1,2 +1,0 @@
-0001-build-Disable-stack-protector-unconditionally.patch
-0002-build-Fail-the-build-if-we-have-undefined-symbols.patch

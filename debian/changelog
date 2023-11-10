@@ -1,5 +1,10 @@
-liburing (2.4-2) UNRELEASED; urgency=medium
+liburing (2.5-1) UNRELEASED; urgency=medium
 
+  * New upstream release.
+    - Remove 0001-build-Disable-stack-protector-unconditionally.patch,
+      merged upstream.
+    - Remove 0002-build-Fail-the-build-if-we-have-undefined-symbols.patch,
+      ditto.
   * Switch autopkgtest dependency from pkg-config to pkgconf.
   * Wrap fields in debian/tests/control.
 

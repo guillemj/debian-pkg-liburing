@@ -1,6 +1,7 @@
 liburing-ffi.so.2 liburing2 #MINVER#
 * Build-Depends-Package: liburing-dev
  LIBURING_2.4@LIBURING_2.4 2.4
+ LIBURING_2.5@LIBURING_2.5 2.5
  __io_uring_buf_ring_cq_advance@LIBURING_2.4 2.4
  __io_uring_get_cqe@LIBURING_2.4 2.4
  __io_uring_sqring_wait@LIBURING_2.4 2.4
@@ -114,6 +115,7 @@ liburing-ffi.so.2 liburing2 #MINVER#
  io_uring_prep_writev@LIBURING_2.4 2.4
  io_uring_queue_exit@LIBURING_2.4 2.4
  io_uring_queue_init@LIBURING_2.4 2.4
+ io_uring_queue_init_mem@LIBURING_2.5 2.5
  io_uring_queue_init_params@LIBURING_2.4 2.4
  io_uring_queue_mmap@LIBURING_2.4 2.4
  io_uring_recvmsg_cmsg_firsthdr@LIBURING_2.4 2.4
@@ -174,6 +176,7 @@ liburing.so.2 liburing2 #MINVER#
  LIBURING_2.2@LIBURING_2.2 2.2
  LIBURING_2.3@LIBURING_2.3 2.3
  LIBURING_2.4@LIBURING_2.4 2.4
+ LIBURING_2.5@LIBURING_2.5 2.5
  __io_uring_get_cqe@LIBURING_2.0 2.0
  __io_uring_sqring_wait@LIBURING_2.0 2.0
  io_uring_check_version@LIBURING_2.4 2.4
@@ -194,6 +197,7 @@ liburing.so.2 liburing2 #MINVER#
  io_uring_peek_batch_cqe@LIBURING_2.0 2.0
  io_uring_queue_exit@LIBURING_2.0 2.0
  io_uring_queue_init@LIBURING_2.0 2.3
+ io_uring_queue_init_mem@LIBURING_2.5 2.5
  io_uring_queue_init_params@LIBURING_2.0 2.3
  io_uring_queue_mmap@LIBURING_2.0 2.3
  io_uring_register@LIBURING_2.3 2.3

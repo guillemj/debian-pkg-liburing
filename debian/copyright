@@ -7,7 +7,7 @@ Upstream-Contact:
 Files:
  *
 Copyright:
- Copyright © 2019-2022 Jens Axboe <axboe@kernel.dk>
+ Copyright © 2019-2023 Jens Axboe <axboe@kernel.dk>
 License: MIT
 
 Files:
@@ -24,12 +24,6 @@ Copyright:
 License: MIT
 
 Files:
- test/sendmsg_fs_cve.c
-Copyright:
- Copyright © 2021 SUSE
-License: GPL-2+
-
-Files:
  man/*
 Copyright:
  Copyright © 2019-2022 Jens Axboe <axboe@kernel.dk>
@@ -39,6 +33,8 @@ Copyright:
  Copyright © 2021-2022 Stefan Roesch <shr@fb.com>
  Copyright © 2022 Dylan Yudaken <dylany@fb.com>
  Copyright © 2022 Samuel Williams
+ Copyright © 2023 Breno Leitao <leitao@debian.org>
+ Copyright © 2023 Rutvik Patel <heyrutvik@gmail.com>
 License: LGPL-2.1+ or MIT
 
 Files:
@@ -47,23 +43,6 @@ Copyright:
  Copyright © 2019 Jens Axboe
  Copyright C 2019 Christoph Hellwig
 License: GPL-2 with Linux-syscall-note exception or MIT
-
-License: GPL-2+
- This program is free software; you can redistribute it and/or modify
- it under the terms of the GNU General Public License as published by
- the Free Software Foundation; either version 2 of the License, or
- (at your option) any later version.
- .
- This program is distributed in the hope that it will be useful,
- but WITHOUT ANY WARRANTY; without even the implied warranty of
- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- GNU General Public License for more details.
- .
- You should have received a copy of the GNU General Public License along
- with this library.  If not, see <https://www.gnu.org/licenses/>.
-Comment:
- On Debian systems, the complete text of the GNU General Public License
- can be found in '/usr/share/common-licenses/GPL-2'.
 
 License: GPL-2 with Linux-syscall-note exception
  This program is free software; you can redistribute it and/or modify
