@@ -1,4 +1,4 @@
-liburing (2.5-1) UNRELEASED; urgency=medium
+liburing (2.5-1) unstable; urgency=medium
 
   * New upstream release.
     - Remove 0001-build-Disable-stack-protector-unconditionally.patch,
@@ -11,7 +11,7 @@ liburing (2.5-1) UNRELEASED; urgency=medium
   * Wrap fields in debian/tests/control.
   * Fix a typo in the manual pages.
 
- -- Guillem Jover <guillem@debian.org>  Wed, 14 Jun 2023 23:59:00 +0200
+ -- Guillem Jover <guillem@debian.org>  Fri, 10 Nov 2023 02:30:36 +0100
 
 liburing (2.4-1) unstable; urgency=medium
 
