@@ -28,6 +28,7 @@ override_dh_auto_configure:
 	  --mandir=/usr/share/man \
 	  --libdir=/usr/lib/$(DEB_HOST_MULTIARCH) \
 	  --libdevdir=/usr/lib/$(DEB_HOST_MULTIARCH) \
+	  --use-libc \
 	  --cc=$(CC)
 
 override_dh_auto_build:

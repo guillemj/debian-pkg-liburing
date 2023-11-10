@@ -5,6 +5,8 @@ liburing (2.5-1) UNRELEASED; urgency=medium
       merged upstream.
     - Remove 0002-build-Fail-the-build-if-we-have-undefined-symbols.patch,
       ditto.
+  * Switch back to use libc (from nolibc) after the support got restored
+    upstream with the new configure --use-libc option.
   * Switch autopkgtest dependency from pkg-config to pkgconf.
   * Wrap fields in debian/tests/control.
 
