@@ -9,6 +9,7 @@ liburing (2.5-1) UNRELEASED; urgency=medium
     upstream with the new configure --use-libc option.
   * Switch autopkgtest dependency from pkg-config to pkgconf.
   * Wrap fields in debian/tests/control.
+  * Fix a typo in the manual pages.
 
  -- Guillem Jover <guillem@debian.org>  Wed, 14 Jun 2023 23:59:00 +0200
 
