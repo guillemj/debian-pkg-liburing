@@ -9,6 +9,7 @@ liburing (2.6-1) UNRELEASED; urgency=medium
     - Clean test/core-coredump.t as it is an expected artifact.
   * Switch from future=+lfs to abi=+lfs build flags feature, and Build-Depends
     on dpkg-dev >= 1.22.0.
+  * Switch to Standards-Version 4.7.0 (no changes needed).
 
  -- Guillem Jover <guillem@debian.org>  Sun, 05 May 2024 15:40:10 +0200
 
