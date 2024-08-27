@@ -5,6 +5,7 @@ liburing (2.7-1) UNRELEASED; urgency=medium
       0001-test-skip-test-case-if-underlying-filesystem-doesn-t.patch
       0002-test-buf-ring-skip-on-older-kernels-that-don-t-suppo.patch
       0003-man-fix-IORING_REGISTER_RING_FDS-docs.patch
+  * Fix typos in code and manual pages.
 
  -- Guillem Jover <guillem@debian.org>  Wed, 21 Aug 2024 13:54:26 +0200
 
