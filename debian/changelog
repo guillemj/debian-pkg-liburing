@@ -1,3 +1,9 @@
+liburing (2.7-2) UNRELEASED; urgency=medium
+
+  * Do not define _GNU_SOURCE in the .pc file Cflags. Closes: #1080419
+
+ -- Guillem Jover <guillem@debian.org>  Wed, 04 Sep 2024 00:49:33 +0200
+
 liburing (2.7-1) unstable; urgency=medium
 
   * New upstream release.
