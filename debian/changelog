@@ -1,4 +1,4 @@
-liburing (2.8-1) UNRELEASED; urgency=medium
+liburing (2.8-1) unstable; urgency=medium
 
   * New upstream release.
     - Remove patches merged or pulled from upstream:
@@ -6,7 +6,7 @@ liburing (2.8-1) UNRELEASED; urgency=medium
       0001-Fix-typos.patch
       0002-Fix-typos.patch
 
- -- Guillem Jover <guillem@debian.org>  Sat, 26 Oct 2024 22:14:58 +0200
+ -- Guillem Jover <guillem@debian.org>  Sat, 26 Oct 2024 23:31:51 +0200
 
 liburing (2.7-2) unstable; urgency=medium
 
