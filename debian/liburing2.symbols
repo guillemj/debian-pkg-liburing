@@ -5,6 +5,7 @@ liburing-ffi.so.2 liburing2 #MINVER#
  LIBURING_2.6@LIBURING_2.6 2.6
  LIBURING_2.7@LIBURING_2.7 2.7
  LIBURING_2.8@LIBURING_2.8 2.8
+ LIBURING_2.9@LIBURING_2.9 2.9
  __io_uring_buf_ring_cq_advance@LIBURING_2.4 2.4
  __io_uring_get_cqe@LIBURING_2.4 2.4
  __io_uring_sqring_wait@LIBURING_2.4 2.4
@@ -16,6 +17,7 @@ liburing-ffi.so.2 liburing2 #MINVER#
  io_uring_buf_ring_mask@LIBURING_2.4 2.4
  io_uring_check_version@LIBURING_2.4 2.4
  io_uring_clone_buffers@LIBURING_2.8 2.8
+ io_uring_clone_buffers_offset@LIBURING_2.9 2.9
  io_uring_close_ring_fd@LIBURING_2.4 2.4
  io_uring_cq_advance@LIBURING_2.4 2.4
  io_uring_cq_eventfd_enabled@LIBURING_2.4 2.4
@@ -165,14 +167,18 @@ liburing-ffi.so.2 liburing2 #MINVER#
  io_uring_register_napi@LIBURING_2.4 2.6
  io_uring_register_personality@LIBURING_2.4 2.4
  io_uring_register_probe@LIBURING_2.4 2.4
+ io_uring_register_region@LIBURING_2.9 2.9
  io_uring_register_restrictions@LIBURING_2.4 2.4
  io_uring_register_ring_fd@LIBURING_2.4 2.4
  io_uring_register_sync_cancel@LIBURING_2.4 2.4
+ io_uring_register_wait_reg@LIBURING_2.9 2.9
+ io_uring_resize_rings@LIBURING_2.9 2.9
  io_uring_ring_dontfork@LIBURING_2.4 2.4
  io_uring_setup@LIBURING_2.4 2.4
  io_uring_setup_buf_ring@LIBURING_2.4 2.4
  io_uring_sq_ready@LIBURING_2.4 2.4
  io_uring_sq_space_left@LIBURING_2.4 2.4
+ io_uring_sqe_set_buf_group@LIBURING_2.9 2.9
  io_uring_sqe_set_data64@LIBURING_2.4 2.4
  io_uring_sqe_set_data@LIBURING_2.4 2.4
  io_uring_sqe_set_flags@LIBURING_2.4 2.4
@@ -181,6 +187,7 @@ liburing-ffi.so.2 liburing2 #MINVER#
  io_uring_submit_and_get_events@LIBURING_2.4 2.4
  io_uring_submit_and_wait@LIBURING_2.4 2.4
  io_uring_submit_and_wait_min_timeout@LIBURING_2.8 2.8
+ io_uring_submit_and_wait_reg@LIBURING_2.9 2.9
  io_uring_submit_and_wait_timeout@LIBURING_2.4 2.4
  io_uring_unregister_buf_ring@LIBURING_2.4 2.4
  io_uring_unregister_buffers@LIBURING_2.4 2.4
@@ -206,11 +213,13 @@ liburing.so.2 liburing2 #MINVER#
  LIBURING_2.6@LIBURING_2.6 2.6
  LIBURING_2.7@LIBURING_2.7 2.7
  LIBURING_2.8@LIBURING_2.8 2.8
+ LIBURING_2.9@LIBURING_2.9 2.9
  __io_uring_get_cqe@LIBURING_2.0 2.0
  __io_uring_sqring_wait@LIBURING_2.0 2.0
  io_uring_buf_ring_head@LIBURING_2.6 2.6
  io_uring_check_version@LIBURING_2.4 2.4
  io_uring_clone_buffers@LIBURING_2.8 2.8
+ io_uring_clone_buffers_offset@LIBURING_2.9 2.9
  io_uring_close_ring_fd@LIBURING_2.4 2.4
  io_uring_enable_rings@LIBURING_2.4 2.4
  io_uring_enter2@LIBURING_2.3 2.3
@@ -251,17 +260,21 @@ liburing.so.2 liburing2 #MINVER#
  io_uring_register_napi@LIBURING_2.6 2.6
  io_uring_register_personality@LIBURING_2.0 2.0
  io_uring_register_probe@LIBURING_2.0 2.0
+ io_uring_register_region@LIBURING_2.9 2.9
  io_uring_register_restrictions@LIBURING_2.4 2.4
  io_uring_register_ring_fd@LIBURING_2.2 2.2
  io_uring_register_sync_cancel@LIBURING_2.3 2.3
+ io_uring_register_wait_reg@LIBURING_2.9 2.9
+ io_uring_resize_rings@LIBURING_2.9 2.9
  io_uring_ring_dontfork@LIBURING_2.0 2.0
  io_uring_setup@LIBURING_2.3 2.3
  io_uring_setup_buf_ring@LIBURING_2.4 2.4
  io_uring_submit@LIBURING_2.0 2.0
  io_uring_submit_and_get_events@LIBURING_2.3 2.3
  io_uring_submit_and_wait@LIBURING_2.0 2.0
- io_uring_submit_and_wait_timeout@LIBURING_2.2 2.2
  io_uring_submit_and_wait_min_timeout@LIBURING_2.8 2.8
+ io_uring_submit_and_wait_reg@LIBURING_2.9 2.9
+ io_uring_submit_and_wait_timeout@LIBURING_2.2 2.2
  io_uring_unregister_buf_ring@LIBURING_2.2 2.2
  io_uring_unregister_buffers@LIBURING_2.0 2.0
  io_uring_unregister_eventfd@LIBURING_2.0 2.0
