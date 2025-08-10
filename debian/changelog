@@ -1,11 +1,11 @@
-liburing (2.11-1) UNRELEASED; urgency=medium
+liburing (2.11-1) unstable; urgency=medium
 
   * New upstream release.
   * Remove «Rules-Requires-Root: no», which is the current default.
   * Remove «Priority: optional» field, which is the current default.
   * Switch to Standards-Version 4.7.2 (no changes needed).
 
- -- Guillem Jover <guillem@debian.org>  Sun, 10 Aug 2025 19:52:55 +0200
+ -- Guillem Jover <guillem@debian.org>  Mon, 11 Aug 2025 01:12:17 +0200
 
 liburing (2.9-1) unstable; urgency=medium
 
