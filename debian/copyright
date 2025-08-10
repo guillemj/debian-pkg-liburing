@@ -7,7 +7,7 @@ Upstream-Contact:
 Files:
  *
 Copyright:
- Copyright © 2019-2024 Jens Axboe <axboe@kernel.dk>
+ Copyright © 2019-2025 Jens Axboe <axboe@kernel.dk>
 License: MIT
 
 Files:
@@ -19,14 +19,14 @@ License: MIT
 Files:
  test/*
 Copyright:
- Copyright © 2019-2024 Jens Axboe <axboe@kernel.dk>
+ Copyright © 2019-2025 Jens Axboe <axboe@kernel.dk>
  Copyright © 2019 Red Hat, Inc.
 License: MIT
 
 Files:
  man/*
 Copyright:
- Copyright © 2019-2024 Jens Axboe <axboe@kernel.dk>
+ Copyright © 2019-2025 Jens Axboe <axboe@kernel.dk>
  Copyright © 2019 Jon Corbet <corbet@lwn.net>
  Copyright © 2019-2020 Red Hat, Inc.
  Copyright © 2020 Shuveb Hussain <shuveb@gmail.com>

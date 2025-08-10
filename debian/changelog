@@ -1,5 +1,6 @@
-liburing (2.9-2) UNRELEASED; urgency=medium
+liburing (2.11-1) UNRELEASED; urgency=medium
 
+  * New upstream release.
   * Remove «Rules-Requires-Root: no», which is the current default.
   * Remove «Priority: optional» field, which is the current default.
   * Switch to Standards-Version 4.7.2 (no changes needed).

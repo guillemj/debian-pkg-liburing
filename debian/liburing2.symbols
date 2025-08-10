@@ -1,5 +1,7 @@
 liburing-ffi.so.2 liburing2 #MINVER#
 * Build-Depends-Package: liburing-dev
+ LIBURING_2.10@LIBURING_2.10 2.10
+ LIBURING_2.11@LIBURING_2.11 2.11
  LIBURING_2.4@LIBURING_2.4 2.4
  LIBURING_2.5@LIBURING_2.5 2.5
  LIBURING_2.6@LIBURING_2.6 2.6
@@ -7,6 +9,8 @@ liburing-ffi.so.2 liburing2 #MINVER#
  LIBURING_2.8@LIBURING_2.8 2.8
  LIBURING_2.9@LIBURING_2.9 2.9
  __io_uring_buf_ring_cq_advance@LIBURING_2.4 2.4
+ __io_uring_clone_buffers@LIBURING_2.10 2.10
+ __io_uring_clone_buffers_offset@LIBURING_2.10 2.10
  __io_uring_get_cqe@LIBURING_2.4 2.4
  __io_uring_sqring_wait@LIBURING_2.4 2.4
  io_uring_buf_ring_add@LIBURING_2.4 2.4
@@ -37,6 +41,8 @@ liburing-ffi.so.2 liburing2 #MINVER#
  io_uring_get_probe_ring@LIBURING_2.4 2.4
  io_uring_get_sqe@LIBURING_2.4 2.4
  io_uring_major_version@LIBURING_2.4 2.4
+ io_uring_memory_size@LIBURING_2.11 2.11
+ io_uring_memory_size_params@LIBURING_2.11 2.11
  io_uring_minor_version@LIBURING_2.4 2.4
  io_uring_mlock_size@LIBURING_2.4 2.4
  io_uring_mlock_size_params@LIBURING_2.4 2.4
@@ -55,6 +61,7 @@ liburing-ffi.so.2 liburing2 #MINVER#
  io_uring_prep_cmd_sock@LIBURING_2.5 2.6
  io_uring_prep_connect@LIBURING_2.4 2.4
  io_uring_prep_epoll_ctl@LIBURING_2.4 2.4
+ io_uring_prep_epoll_wait@LIBURING_2.10 2.10
  io_uring_prep_fadvise64@LIBURING_2.7 2.7
  io_uring_prep_fadvise@LIBURING_2.4 2.4
  io_uring_prep_fallocate@LIBURING_2.4 2.4
@@ -99,6 +106,7 @@ liburing-ffi.so.2 liburing2 #MINVER#
  io_uring_prep_read_multishot@LIBURING_2.5 2.6
  io_uring_prep_readv2@LIBURING_2.4 2.4
  io_uring_prep_readv@LIBURING_2.4 2.4
+ io_uring_prep_readv_fixed@LIBURING_2.10 2.10
  io_uring_prep_recv@LIBURING_2.4 2.4
  io_uring_prep_recv_multishot@LIBURING_2.4 2.4
  io_uring_prep_recvmsg@LIBURING_2.4 2.4
@@ -114,6 +122,7 @@ liburing-ffi.so.2 liburing2 #MINVER#
  io_uring_prep_send_zc_fixed@LIBURING_2.4 2.4
  io_uring_prep_sendmsg@LIBURING_2.4 2.4
  io_uring_prep_sendmsg_zc@LIBURING_2.4 2.4
+ io_uring_prep_sendmsg_zc_fixed@LIBURING_2.10 2.10
  io_uring_prep_sendto@LIBURING_2.4 2.4
  io_uring_prep_setxattr@LIBURING_2.4 2.4
  io_uring_prep_shutdown@LIBURING_2.4 2.4
@@ -136,6 +145,7 @@ liburing-ffi.so.2 liburing2 #MINVER#
  io_uring_prep_write_fixed@LIBURING_2.4 2.4
  io_uring_prep_writev2@LIBURING_2.4 2.4
  io_uring_prep_writev@LIBURING_2.4 2.4
+ io_uring_prep_writev_fixed@LIBURING_2.10 2.10
  io_uring_queue_exit@LIBURING_2.4 2.4
  io_uring_queue_init@LIBURING_2.4 2.4
  io_uring_queue_init_mem@LIBURING_2.5 2.5
@@ -162,6 +172,7 @@ liburing-ffi.so.2 liburing2 #MINVER#
  io_uring_register_files_tags@LIBURING_2.4 2.4
  io_uring_register_files_update@LIBURING_2.4 2.4
  io_uring_register_files_update_tag@LIBURING_2.4 2.4
+ io_uring_register_ifq@LIBURING_2.10 2.10
  io_uring_register_iowq_aff@LIBURING_2.4 2.4
  io_uring_register_iowq_max_workers@LIBURING_2.4 2.4
  io_uring_register_napi@LIBURING_2.4 2.6
@@ -174,6 +185,7 @@ liburing-ffi.so.2 liburing2 #MINVER#
  io_uring_register_wait_reg@LIBURING_2.9 2.9
  io_uring_resize_rings@LIBURING_2.9 2.9
  io_uring_ring_dontfork@LIBURING_2.4 2.4
+ io_uring_set_iowait@LIBURING_2.10 2.10
  io_uring_setup@LIBURING_2.4 2.4
  io_uring_setup_buf_ring@LIBURING_2.4 2.4
  io_uring_sq_ready@LIBURING_2.4 2.4
@@ -205,6 +217,8 @@ liburing-ffi.so.2 liburing2 #MINVER#
 liburing.so.2 liburing2 #MINVER#
 * Build-Depends-Package: liburing-dev
  LIBURING_2.0@LIBURING_2.0 2.0
+ LIBURING_2.10@LIBURING_2.10 2.10
+ LIBURING_2.11@LIBURING_2.11 2.11
  LIBURING_2.1@LIBURING_2.1 2.1
  LIBURING_2.2@LIBURING_2.2 2.2
  LIBURING_2.3@LIBURING_2.3 2.3
@@ -214,6 +228,8 @@ liburing.so.2 liburing2 #MINVER#
  LIBURING_2.7@LIBURING_2.7 2.7
  LIBURING_2.8@LIBURING_2.8 2.8
  LIBURING_2.9@LIBURING_2.9 2.9
+ __io_uring_clone_buffers@LIBURING_2.10 2.10
+ __io_uring_clone_buffers_offset@LIBURING_2.10 2.10
  __io_uring_get_cqe@LIBURING_2.0 2.0
  __io_uring_sqring_wait@LIBURING_2.0 2.0
  io_uring_buf_ring_head@LIBURING_2.6 2.6
@@ -231,6 +247,8 @@ liburing.so.2 liburing2 #MINVER#
  io_uring_get_probe_ring@LIBURING_2.0 2.0
  io_uring_get_sqe@LIBURING_2.0 2.0
  io_uring_major_version@LIBURING_2.4 2.4
+ io_uring_memory_size@LIBURING_2.11 2.11
+ io_uring_memory_size_params@LIBURING_2.11 2.11
  io_uring_minor_version@LIBURING_2.4 2.4
  io_uring_mlock_size@LIBURING_2.1 2.3
  io_uring_mlock_size_params@LIBURING_2.1 2.3
@@ -255,6 +273,7 @@ liburing.so.2 liburing2 #MINVER#
  io_uring_register_files_tags@LIBURING_2.1 2.1
  io_uring_register_files_update@LIBURING_2.0 2.0
  io_uring_register_files_update_tag@LIBURING_2.1 2.1
+ io_uring_register_ifq@LIBURING_2.10 2.10
  io_uring_register_iowq_aff@LIBURING_2.1 2.1
  io_uring_register_iowq_max_workers@LIBURING_2.1 2.1
  io_uring_register_napi@LIBURING_2.6 2.6
@@ -267,6 +286,7 @@ liburing.so.2 liburing2 #MINVER#
  io_uring_register_wait_reg@LIBURING_2.9 2.9
  io_uring_resize_rings@LIBURING_2.9 2.9
  io_uring_ring_dontfork@LIBURING_2.0 2.0
+ io_uring_set_iowait@LIBURING_2.10 2.10
  io_uring_setup@LIBURING_2.3 2.3
  io_uring_setup_buf_ring@LIBURING_2.4 2.4
  io_uring_submit@LIBURING_2.0 2.0
