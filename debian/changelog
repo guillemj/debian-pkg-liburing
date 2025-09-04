@@ -1,3 +1,9 @@
+liburing (2.12-1) UNRELEASED; urgency=medium
+
+  * New upstream release.
+
+ -- Guillem Jover <guillem@debian.org>  Thu, 04 Sep 2025 11:15:15 +0200
+
 liburing (2.11-1) unstable; urgency=medium
 
   * New upstream release.
