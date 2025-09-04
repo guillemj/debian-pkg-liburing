@@ -1,3 +1,5 @@
-version=4
-opts=pgpsigurlmangle=s/$/.asc/ \
-https://brick.kernel.dk/snaps/ liburing-([\d\.]+)\.tar\.[gx]z debian uupdate
+Version: 5
+
+Source: https://brick.kernel.dk/snaps/
+Matching-Pattern: liburing-([\d\.]+)\.tar\.[gx]z
+Pgp-Sig-Url-Mangle: s/$/.asc/

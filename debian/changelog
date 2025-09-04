@@ -1,6 +1,7 @@
 liburing (2.12-1) UNRELEASED; urgency=medium
 
   * New upstream release.
+  * Switch to debian/watch version 5.
 
  -- Guillem Jover <guillem@debian.org>  Thu, 04 Sep 2025 11:15:15 +0200
 
