@@ -3,3 +3,4 @@ Version: 5
 Source: https://brick.kernel.dk/snaps/
 Matching-Pattern: liburing-([\d\.]+)\.tar\.[gx]z
 Pgp-Sig-Url-Mangle: s/$/.asc/
+Update-Script: uupdate
