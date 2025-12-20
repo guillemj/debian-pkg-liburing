@@ -1,11 +1,11 @@
-liburing (2.13-1) UNRELEASED; urgency=medium
+liburing (2.13-1) unstable; urgency=medium
 
   * New upstream release.
   * Set «Update-Script: uupdate» in debian/watch.
   * Use spaces around assignment operator in make variable to distinguish
     them from shell assignments.
 
- -- Guillem Jover <guillem@debian.org>  Sat, 20 Dec 2025 03:33:48 +0100
+ -- Guillem Jover <guillem@debian.org>  Sat, 20 Dec 2025 03:52:19 +0100
 
 liburing (2.12-1) unstable; urgency=medium
 
