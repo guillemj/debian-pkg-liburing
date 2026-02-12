@@ -1,0 +1,67 @@
+From b478a020a1e6637ad5798b4c5cd2984800cb38d6 Mon Sep 17 00:00:00 2001
+From: Guillem Jover <guillem@hadrons.org>
+Date: Fri, 13 Feb 2026 00:34:57 +0100
+Subject: [PATCH] man: Fix use of dot on first column in example sections
+
+We need to use a zero-width space via \& to avoid the dot being
+interpreted as a roff command, as warned by groff:
+
+  343: warning: macro 'flags' not defined (possibly missing space after 'fl')
+  359: warning: macro 'flags' not defined (possibly missing space after 'fl')
+  374: warning: macro 'flags' not defined (possibly missing space after 'fl')
+  376: warning: macro 'sq_thread_cpu' not defined
+  377: warning: macro 'sq_thread_idle' not defined
+
+Signed-off-by: Guillem Jover <guillem@hadrons.org>
+---
+ man/io_uring_setup_flags.7 | 20 ++++++++++----------
+ 1 file changed, 10 insertions(+), 10 deletions(-)
+
+diff --git a/man/io_uring_setup_flags.7 b/man/io_uring_setup_flags.7
+index 67347342..924c5f04 100644
+--- a/man/io_uring_setup_flags.7
++++ b/man/io_uring_setup_flags.7
+@@ -340,9 +340,9 @@ the SQPOLL thread is also shared.
+ .PP
+ .in +4n
+ .EX
+-.flags = IORING_SETUP_SINGLE_ISSUER |
+-        IORING_SETUP_DEFER_TASKRUN |
+-        IORING_SETUP_COOP_TASKRUN
++\&.flags = IORING_SETUP_SINGLE_ISSUER |
++         IORING_SETUP_DEFER_TASKRUN |
++         IORING_SETUP_COOP_TASKRUN
+ .EE
+ .in
+ .PP
+@@ -356,9 +356,9 @@ event loop.
+ .PP
+ .in +4n
+ .EX
+-.flags = IORING_SETUP_IOPOLL |
+-        IORING_SETUP_SINGLE_ISSUER |
+-        IORING_SETUP_DEFER_TASKRUN
++\&.flags = IORING_SETUP_IOPOLL |
++         IORING_SETUP_SINGLE_ISSUER |
++         IORING_SETUP_DEFER_TASKRUN
+ .EE
+ .in
+ .PP
+@@ -371,10 +371,10 @@ overhead. Combined with DEFER_TASKRUN for optimal completion handling.
+ .PP
+ .in +4n
+ .EX
+-.flags = IORING_SETUP_SQPOLL |
+-        IORING_SETUP_SQ_AFF
+-.sq_thread_cpu = preferred_cpu
+-.sq_thread_idle = 1000
++\&.flags = IORING_SETUP_SQPOLL |
++         IORING_SETUP_SQ_AFF
++\&.sq_thread_cpu = preferred_cpu
++\&.sq_thread_idle = 1000
+ .EE
+ .in
+ .PP
+-- 
+2.51.0
+
