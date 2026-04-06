@@ -1,5 +1,5 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Source: https://git.kernel.dk/cgit/liburing/
+Source: https://github.com/axboe/liburing
 Upstream-Contact:
  io-uring@vger.kernel.org,
  Jens Axboe <axboe@kernel.dk>,
