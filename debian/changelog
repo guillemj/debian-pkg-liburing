@@ -5,6 +5,7 @@ liburing (2.14-2) UNRELEASED; urgency=medium
   * Remove versioned Build-Depends on dpkg-dev, satisfied since Debian trixie.
   * Switch to Standards-Version 4.7.4 (no changes needed).
   * Switch dead upstream git URL in debian/copyright to github.com.
+  * Refactor common description into a source stanza Description field.
 
  -- Guillem Jover <guillem@debian.org>  Mon, 06 Apr 2026 18:26:20 +0200
 

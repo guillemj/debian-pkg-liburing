@@ -8,6 +8,10 @@ Standards-Version: 4.7.4
 Build-Depends:
  debhelper-compat (= 13),
  procps <!nocheck>,
+Description: Linux kernel io_uring access library
+ This library provides helpers to setup and teardown io_uring instances,
+ and also a simplified interface for applications that do not need (or
+ want) to deal with the full kernel side implementation.
 
 Package: liburing2
 Architecture: linux-any
@@ -17,10 +21,8 @@ Pre-Depends:
 Depends:
  ${misc:Depends},
  ${shlibs:Depends},
-Description: Linux kernel io_uring access library - shared library
- This library provides helpers to setup and teardown io_uring instances,
- and also a simplified interface for applications that do not need (or
- want) to deal with the full kernel side implementation.
+Description: ${source:Synopsis} - shared library
+ ${source:Extended-Description}
  .
  This package contains the shared library.
 
@@ -33,9 +35,7 @@ Depends:
  liburing2 (= ${binary:Version}),
  libc6-dev | libc-dev,
  linux-libc-dev (>= 5.1),
-Description: Linux kernel io_uring access library - development files
- This library provides helpers to setup and teardown io_uring instances,
- and also a simplified interface for applications that do not need (or
- want) to deal with the full kernel side implementation.
+Description: ${source:Synopsis} - development files
+ ${source:Extended-Description}
  .
  This package contains the static library and the header files.
