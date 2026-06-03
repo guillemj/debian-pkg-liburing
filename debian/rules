@@ -36,8 +36,10 @@ override_dh_auto_build:
 
 # XXX: The tests do not pass yet as of Linux 6.5, and they are not being
 # skipped either.
+TESTS_FLAKY = yes
+
 override_dh_auto_test:
-	dh_auto_test -- runtests || true
+	$(if $(TESTS_FLAKY),-)dh_auto_test -- runtests
 
 override_dh_installchangelogs:
 	dh_installchangelogs --no-trim
